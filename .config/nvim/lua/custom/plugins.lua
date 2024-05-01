@@ -73,6 +73,7 @@ local plugins = {
       return M
     end,
   },
+  -- R plugins
   {
     "jalvesaq/cmp-nvim-r",
     opts = {
@@ -82,6 +83,12 @@ local plugins = {
   },
   {
     "jalvesaq/Nvim-R",
+  },
+  -- Haskell plugins
+  {
+    "mrcjkb/haskell-tools.nvim",
+    version = '^3',
+    lazy = false,
   }
 }
 
