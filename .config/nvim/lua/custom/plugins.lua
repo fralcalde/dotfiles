@@ -89,8 +89,8 @@ local plugins = {
   -- Haskell plugins
   {
     "mrcjkb/haskell-tools.nvim",
-    version = "^3",
-    ft = { 'haskell', 'lhaskell', 'cabal', 'cabalproject' },
+    version = '^3',
+    lazy = false,
   }
 }
 
