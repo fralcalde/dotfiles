@@ -1,0 +1,9 @@
+[Unit]
+Description=Timer for random-wall service
+
+[Timer]
+OnUnitActiveSec=5min
+OnbootSec=5min
+
+[Install]
+WantedBy=timers.target

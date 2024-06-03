@@ -1,0 +1,6 @@
+[Unit]
+Description=Script to randomize hyprpaper wallpapers
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/random-wall
