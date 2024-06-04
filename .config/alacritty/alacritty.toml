@@ -3,3 +3,11 @@ family = "BigBlueTermPlus Nerd Font"
 
 [window]
 opacity = 0.3
+
+[keyboard]
+bindings = [
+  { key = "o", mods = "Super", command = {program = "alacritty", args = ["msg", "config", "window.opacity=0.7"]} },
+  { key = "O", mods = "Super|Shift", command = {program = "alacritty", args = ["msg", "config", "--reset"]}}
+]
+
+
