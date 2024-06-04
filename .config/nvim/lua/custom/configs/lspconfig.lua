@@ -10,3 +10,4 @@ lspconfig.r_language_server.setup({
   capabilities = capabilities,
 })
 
+lspconfig.pylsp.setup{}
