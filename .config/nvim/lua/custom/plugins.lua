@@ -103,9 +103,26 @@ local plugins = {
 	-- Java plugins
 	{
 		"nvim-java/nvim-java",
-		init = function()
-			require('java').setup()
-		end,
+		config = false,
+		dependencies = {
+			{
+				"neovim/nvim-lspconfig",
+				opts = {
+					servers = {
+						jdtls = {
+							-- your jdtls configuration goes here
+						},
+					},
+					setup = {
+						jdtls = function()
+							require("java").setup({
+								-- your nvim-java configuration goes here
+							})
+						end,
+					},
+				},
+			},
+		},
 	}
 }
 
