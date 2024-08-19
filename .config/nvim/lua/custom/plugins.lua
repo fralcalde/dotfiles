@@ -4,6 +4,13 @@ local plugins = {
   {
     "williamboman/mason.nvim",
     opts = {
+			ui = {
+				icons = {
+					package_installed = '✓',
+					package_pending = '➜',
+					package_uninstalled = '✗',
+				},
+			},
       ensure_installed = {
         "rust-analyzer",
         "r-languageserver",
@@ -91,7 +98,15 @@ local plugins = {
     "mrcjkb/haskell-tools.nvim",
     version = '^3',
     lazy = false,
-  }
+  },
+
+	-- Java plugins
+	{
+		"nvim-java/nvim-java",
+		init = function()
+			require('java').setup()
+		end,
+	}
 }
 
 return plugins

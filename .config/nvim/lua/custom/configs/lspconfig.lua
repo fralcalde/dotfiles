@@ -14,3 +14,13 @@ lspconfig.pylsp.setup({
   on_attach = on_attach,
   capabilities = capabilities,
 })
+
+lspconfig.gdscript.setup({
+	single_file_support = false,
+	root_dir = require('lspconfig.util').root_pattern('project.godot', '.git'),
+	filetypes = {'gd', 'gdscript', 'gdscript3' },
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
+
+lspconfig.jdtls.setup({})
