@@ -1,5 +1,6 @@
 return {
   "nvim-java/nvim-java",
+  root_dir = vim.fs.dirname(vim.fs.find({ "gradlew", ".git", "mvnw" }, { upward = true })[1]),
   config = false,
   dependencies = {
     {
